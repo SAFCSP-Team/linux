@@ -18,6 +18,10 @@ One of the defining features of Linux is its command-line interface (CLI), which
 
 Learning Linux commands not only enhances your technical skills but also opens up a world of opportunities in the rapidly evolving tech landscape. Whether you're a developer, IT professional, or enthusiast, mastering the command line is a crucial step toward becoming proficient in Linux. 
 
+## Linux Distributions 
+Linux is an open-source operating system; it is open for alteration, modification, and distribution. Therefore, it has multiple distributions, each of which bundles the Linux kernel with software programs and utilities to serve specific purposes. 
+
+One of these distributions is **Ubuntu**, which is the one we will be using, as it is a simple, user-friendly, and general-purpose distribution. Unlike Kali Linux, which is bundled with software and utilities for security purposes and penetration testing.
 ## What is VirtualBox?
 
 VirtualBox is a powerful open-source virtualization software developed by Oracle. It allows users to create and manage virtual machines (VMs) on their computer, enabling the running of multiple operating systems simultaneously on a single physical machine. VirtualBox runs on major operating systems, including Windows, macOS, Linux, and Solaris. This cross-platform compatibility allows users to run different OS environments on their native systems, and we will use it to install Linux OS.
@@ -25,21 +29,21 @@ VirtualBox is a powerful open-source virtualization software developed by Oracle
 
 ## Installing Ubuntu 25 on Mac using VirtualBox
 
->[!Note]Choose the suitable architecture based on your device. 
-In our case the device architecture is **ARM 64-bit architecture**.
-
 This guide will walk you through installing Ubuntu 25 on an M-series MacBook using VirtualBox.    
 
+>[!NOTE]
+> Choose the suitable architecture based on your device. 
+In our case, the device architecture is **ARM 64-bit architecture**.
 
 ## Step 1: Download Required Files
 
-### Download VirtualBox for macOS ARM64:
+### Download VirtualBox for macOS ARM64
 1. Go to the [VirtualBox downloads page](https://virtualbox.org/wiki/Downloads).
 2. Under **VirtualBox Platform Packages**, click on **macOS / Apple Silicon hosts** to download the ARM64 installer (e.g., `VirtualBox-7.1.8-166488-macOSArm64.dmg`). Save this `.dmg` file to your Desktop as well.
 ![vbox](images/vbox.png)
 
 
-### Download the Ubuntu 25.04 ISO:
+### Download the Ubuntu 25.04 ISO
 1. Open a web browser and navigate to the official [Ubuntu download page](https://ubuntu.com/download/desktop).
 2. Scroll down to locate **Ubuntu 25.04** and click the **Download** button under **ARM 64-bit architecture**. This will download the `ubuntu-25.04-desktop-arm64.iso` file. Save it to your Desktop (or another easily accessible folder).
 ![Ubuntu](images/Ubuntu.png)
@@ -62,7 +66,7 @@ This guide will walk you through installing Ubuntu 25 on an M-series MacBook usi
 VirtualBox is now installed on your system. You can find it in the **Applications** folder. 
 
 
-> VirtualBox Extension Pack is for a personal Use and Educational License governs your access to and use of it **(Optional)**. [here](https://www.virtualbox.org/wiki/Downloads).
+> VirtualBox Extension Pack is for personal Use, and the Educational License governs your access to and use of it **(Optional)**. [here](https://www.virtualbox.org/wiki/Downloads).
 
 ![extention-pack](images/extention-pack.png)
 
@@ -79,7 +83,7 @@ Now it’s time to create a new virtual machine for Ubuntu. Open VirtualBox Mana
 
 ![One](images/1.png)
 3. Unattended Installation settings (auto-fill):
-   - In the **Unattended Install** tab, enter your desired **Username** and **Password** for the Ubuntu system (e.g., username: “techrechard”).
+   - In the **Unattended Install** tab, enter your desired **Username** and **Password** for the Ubuntu system.
    - Re-type the password to confirm.
    - Make sure the **Guest Additions** checkbox is checked. The path for the Guest Additions ISO should automatically point to the correct location on your Mac.
 

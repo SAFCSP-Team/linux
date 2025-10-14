@@ -25,21 +25,26 @@ VirtualBox is a powerful open-source virtualization software developed by Oracle
 
 ## Installing Ubuntu 25 on Mac using VirtualBox
 
+>[!Note]Choose the suitable architecture based on your device. 
+In our case the device architecture is **ARM 64-bit architecture**.
+
 This guide will walk you through installing Ubuntu 25 on an M-series MacBook using VirtualBox.    
-Resource: [Step-by-step video](https://www.youtube.com/watch?v=j50F4QjqoVM).    
-The steps are listed in details below, and you can follow the above link also.
 
 
 ## Step 1: Download Required Files
-### Download the Ubuntu 25.04 ISO:
-1. Open a web browser and navigate to the official [Ubuntu download page](https://ubuntu.com/download/desktop).
-2. Scroll down to locate **Ubuntu 25.04** and click the **Download** button under **ARM 64-bit architecture**. This will download the `ubuntu-25.04-desktop-arm64.iso` file. Save it to your Desktop (or another easily accessible folder).
-![Ubuntu](images/Ubuntu.png)
 
 ### Download VirtualBox for macOS ARM64:
 1. Go to the [VirtualBox downloads page](https://virtualbox.org/wiki/Downloads).
 2. Under **VirtualBox Platform Packages**, click on **macOS / Apple Silicon hosts** to download the ARM64 installer (e.g., `VirtualBox-7.1.8-166488-macOSArm64.dmg`). Save this `.dmg` file to your Desktop as well.
 ![vbox](images/vbox.png)
+
+
+### Download the Ubuntu 25.04 ISO:
+1. Open a web browser and navigate to the official [Ubuntu download page](https://ubuntu.com/download/desktop).
+2. Scroll down to locate **Ubuntu 25.04** and click the **Download** button under **ARM 64-bit architecture**. This will download the `ubuntu-25.04-desktop-arm64.iso` file. Save it to your Desktop (or another easily accessible folder).
+![Ubuntu](images/Ubuntu.png)
+
+
 
 
 
@@ -54,10 +59,14 @@ The steps are listed in details below, and you can follow the above link also.
    - Wait for the installation process to complete. This will install VirtualBox 7.1.8 (or the version you downloaded) onto your Mac.
    - When the installation finishes, you’ll see a completion message. Click **Close** to exit the installer.
 
-VirtualBox is now installed on your system. You can find it in the **Applications** folder. Proceed to the next step to install the Extension Pack.
+VirtualBox is now installed on your system. You can find it in the **Applications** folder. 
 
 
-After installing the Extension Pack, you can close the VirtualBox Manager for now. The extension features will be available to any virtual machines you create.
+> VirtualBox Extension Pack is for a personal Use and Educational License governs your access to and use of it **(Optional)**. [here](https://www.virtualbox.org/wiki/Downloads).
+
+![extention-pack](images/extention-pack.png)
+
+> After installing the Extension Pack, you can close the VirtualBox Manager for now. The extension features will be available to any virtual machines you create.
 
 ## Step 3: Create the Ubuntu Virtual Machine
 Now it’s time to create a new virtual machine for Ubuntu. Open VirtualBox Manager if it’s not already open, and follow these steps:
@@ -105,4 +114,10 @@ Now it’s time to create a new virtual machine for Ubuntu. Open VirtualBox Mana
 2. Run the update commands:
    ```bash
    sudo apt update && sudo apt upgrade -y
+   ```
+>[!Note]Step-by-step tutorial    
+Resource: [Installing Ubuntu and VirtualBox on MAC](https://www.youtube.com/watch?v=j50F4QjqoVM).  
+
+## Install Ubuntu and VirtualBox on Windows
+Resource: [Installing Ubuntu and VirtualBox on Windows](https://www.youtube.com/watch?v=j50F4QjqoVM). 
 
